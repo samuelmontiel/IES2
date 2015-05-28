@@ -8,17 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    
-
-
 </head>
 
 <body>
 
     <div id="wrapper">
-
-       
+    
 
         <div id="page-wrapper">
 
@@ -44,14 +39,14 @@
       <!-- left column -->      
                               <div class="col-md-6">
                                     <div class="text-left">
-                                      <img src="//placehold.it/100" class="avatar img-circle" alt="avatar">
+                                      <img src="images/alumnos/09460377.jpg" class="avatar img-circle" alt="avatar" width="100px" height="100px">
                                   
                                     </div>
                               </div>
                               <div class="col-md-6">
                                     <div class="text-right">
-                                     <h4>Samuel Montil Ramirez</h4>
-                                     <h4>09460377</h4>
+                                     <h4>Samuel Montiel Ramirez</h4>
+                                     <h4>14001</h4>
                                   
                                     </div>
                               </div>
@@ -61,19 +56,16 @@
                             <div class="col-lg-12 text-center">
                                 <div class="panel panel-default">
                                     <div class="panel-body">
-                                         <div class="col-md-2">
-                                             <h4 "text-muted-ies">Semestre:<h4>6</h4></h4>
+                                         <div class="col-md-3">
+                                             <h4 "text-muted-ies">Cuatrimestre:<h4>4</h4></h4>
                                          </div>
-                                        <div class="col-md-2">
-                                            <h4 "text-muted">Promedio:<h4>100</h4></h4>
+                                        <div class="col-md-3">
+                                            <h4 "text-muted">Promedio:<h4>95</h4></h4>
                                         </div>
-                                        <div class="col-md-2">
-                                            <h4 "text-muted">Creditos:<h4>380 de 400</h4></h4>
+                                        <div class="col-md-3">
+                                            <h4 "text-muted">Avance :<h4>36%</h4></h4>
                                         </div>
-                                        <div class="col-md-2">
-                                            <h4 "text-muted">Avance :<h4>95%</h4></h4>
-                                        </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-3">
                                             <div class="text-success">
                                                 <h4 class="text-right">Vigente</h4>
                                                 
@@ -95,20 +87,18 @@
                                                 <table class="table table-hover">
                                                     <thead>
                                                         <tr>
-                                                            <th>Carrera</th>
+                                                            <th>Licenciatura en</th>
                                                             <th>Plan</th>
-                                                            <th>Especialidad</th>
                                                             <th>Estado</th>
                                                             <th>Correo Institucional</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td>INGENIERIA EN SISTEMAS COMPUTACIONEALES</td>
-                                                            <td>ISIC-2004-296</td>
-                                                            <td>TECNOLOGIA WEB</td>
+                                                            <td>MATEMÁTICAS</td>
+                                                            <td>2014</td>
                                                             <td>Vigente</td>
-                                                            <td>09460377@itcolima.edu.mx</td>
+                                                            <td>14001@ies.edu.mx</td>
                                                         </tr>
                                                                                                               
                                                     </tbody>

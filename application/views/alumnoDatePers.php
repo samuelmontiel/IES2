@@ -42,14 +42,14 @@
       <!-- left column -->      
                               <div class="col-md-6">
                                     <div class="text-left">
-                                      <img src="//placehold.it/100" class="avatar img-circle" alt="avatar">
+                                      <img src="images/alumnos/09460377.jpg" class="avatar img-circle" alt="avatar" height="100px" width="100px">
                                   
                                     </div>
                               </div>
                               <div class="col-md-6">
                                     <div class="text-right">
-                                     <h4>Samuel Montil Ramirez</h4>
-                                     <h4>09460377</h4>
+                                     <h4>Samuel Montiel Ramirez</h4>
+                                     <h4>14001</h4>
                                   
                                     </div>
                               </div>
@@ -69,8 +69,8 @@
                                                 <div class="">
                                                     <div class="panel-body">
                                                         <div class="form-group">
-                                                            <label>Nombre</label>
-                                                            <input class="form-control" placeholder="Enter text">
+                                                            <label>Nombre completo</label>
+                                                            <input class="form-control" placeholder="Samuel Montiel Ramirez">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -80,7 +80,7 @@
                                                     <div class="panel-body">
                                                         <div class="form-group">
                                                             <label>CURP</label>
-                                                            <input class="form-control" placeholder="Enter text">
+                                                            <input class="form-control" placeholder="MORS910920HCMNMM07">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -92,7 +92,7 @@
                                                     <div class="panel-body">
                                                         <div class="form-group">
                                                             <label>Fecha de Nac</label>
-                                                            <input class="form-control" placeholder="Enter text">
+                                                            <input class="form-control" placeholder="20 septiembre 1991">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -102,7 +102,7 @@
                                                     <div class="panel-body">
                                                         <div class="form-group">
                                                             <label>Sexo</label>
-                                                            <input class="form-control" placeholder="Enter text">
+                                                            <input class="form-control" placeholder="Masculino">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -112,7 +112,7 @@
                                                     <div class="panel-body">
                                                         <div class="form-group">
                                                             <label>Correo</label>
-                                                            <input class="form-control" placeholder="Enter text">
+                                                            <input class="form-control" placeholder="14001@ies.edu.mx">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -124,7 +124,7 @@
                                                     <div class="panel-body">
                                                         <div class="form-group">
                                                             <label>Calle</label>
-                                                            <input class="form-control" placeholder="Enter text">
+                                                            <input class="form-control" placeholder="Santiago Escoto">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -134,7 +134,7 @@
                                                     <div class="panel-body">
                                                         <div class="form-group">
                                                             <label>Numero</label>
-                                                            <input class="form-control" placeholder="Enter text">
+                                                            <input class="form-control" placeholder="600">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -144,7 +144,7 @@
                                                     <div class="panel-body">
                                                         <div class="form-group">
                                                             <label>Colonia</label>
-                                                            <input class="form-control" placeholder="Enter text">
+                                                            <input class="form-control" placeholder="La Albarrada">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -154,7 +154,7 @@
                                                     <div class="panel-body">
                                                         <div class="form-group">
                                                             <label>Municipio</label>
-                                                            <input class="form-control" placeholder="Enter text">
+                                                            <input class="form-control" placeholder="Colima">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -164,7 +164,7 @@
                                                     <div class="panel-body">
                                                         <div class="form-group">
                                                             <label>Estado</label>
-                                                            <input class="form-control" placeholder="Enter text">
+                                                            <input class="form-control" placeholder="Colima">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -174,7 +174,7 @@
                                                     <div class="panel-body">
                                                         <div class="form-group">
                                                             <label>Pais</label>
-                                                            <input class="form-control" placeholder="Enter text">
+                                                            <input class="form-control" placeholder="México">
                                                         </div>
                                                     </div>
                                                 </div>

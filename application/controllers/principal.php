@@ -4,7 +4,7 @@ class Principal extends CI_Controller {
 
 	public function __construct(){
 		parent::__construct();
-		 // $this->load->model('iesmodel');
+		 $this->load->model('iesmodel');
 		$this->load->library('form_validation');
 		$this->load->helper(array('form','url'));
 		$this->load->database();
@@ -58,23 +58,23 @@ class Principal extends CI_Controller {
 		$this->load->view('templateAdmin',$data);
 		
 	}
-	public function login()
-	{
+	// public function login()
+	// {
 		
-		$data['contenidoAlumno'] = 'alumnoDateInst.php';
-		$this->load->view('templateAlumno',$data);
+	// 	$data['contenidoAlumno'] = 'alumnoDateInst.php';
+	// 	$this->load->view('templateAlumno',$data);
 		
-	}
+	// }
 
-	/*public function login(){
+	public function login(){
 
 				if($this->input->post()){
-				$usuario= $this->iesmodel->login($this->input->post('correo'),($this->input->post('password')));
+				$usuario= $this->iesmodel->login($this->input->post('usuario'),($this->input->post('password')));
 					if(!is_object($usuario)){
 						//contraseña y/o usuario invalido
 						//$contra = sha1($this->input->post('password')); exit($contra);
 						$this->session->sess_destroy();
-						redirect('principal/Session');						
+						redirect('principal/index');						
 
 					}else{
 							
@@ -90,8 +90,12 @@ class Principal extends CI_Controller {
 
 				else{
 								$this->session->sess_destroy();
-								redirect('principal/Session');
+								redirect('principal/index');
 							}		
 	}//fin login
-	*/
+	public function logout(){
+		$this->session->sess_destroy();
+		 redirect('principal/index');
+	}
+	
 }

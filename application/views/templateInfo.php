@@ -43,7 +43,7 @@
           <li><a href="#quienesSomos" class="scroll-link">¿Quienes Somos?</a></li>
           <li><a href="#oferta" class="scroll-link">Oferta Acedemica</a></li>
           <li><a href="#miies" class="scroll-link">Mi IES</a></li>
-          <li><a href="#ubicacion" class="scroll-link">Ubicacion</a></li>
+          <li><a href="#ubicacion" class="scroll-link">Ubicación</a></li>
           <li><a href="#org" class="scroll-link">Organigrama</a></li>
           <li><a href="#contacto" class="scroll-link">Contáctenos</a></li>
           
@@ -256,7 +256,7 @@
 
       </form> -->
       <form action="<?php echo site_url('principal/login'); ?>" method="post">
-          <input type="text" class="form-control" name="uauario" id="uauario" placeholder="Usuario"  required >
+          <input type="text" class="form-control" name="usuario" id="usuario" placeholder="Usuario"  required >
           <input type="password" class="form-control" name="password" id="password" placeholder="Contraseña"  required>
           <button name="ingresar" type="submit" class="btn btn-lg btn-primary" id="ingresar">Ingresar</button>
       </form>
