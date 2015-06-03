@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+     <base href="<?php echo base_url();?>">
 </head>
 
 <body>
@@ -36,20 +37,24 @@
                         </ol>
                         <ol class="breadcrumb">
                             <div class="row">
-      <!-- left column -->      
+      <!-- left column -->     
                               <div class="col-md-6">
                                     <div class="text-left">
-                                      <img src="images/alumnos/09460377.jpg" class="avatar img-circle" alt="avatar" width="100px" height="100px">
+                                      <img src="<?php echo $registro->img_perfil?>" class="avatar img-circle" alt="avatar" width="100px" height="100px">
                                   
                                     </div>
                               </div>
                               <div class="col-md-6">
+                               
                                     <div class="text-right">
-                                     <h4>Samuel Montiel Ramirez</h4>
-                                     <h4>14001</h4>
-                                  
+                               
+                                    <h4><?php echo $registro->nombre?> <?php echo $registro->apellido_m?> <?php echo $registro->apellido_p?> </h4>
+                                    <h4><?php echo $registro->no_ctrl?></h4>
                                     </div>
+                              
+                            
                               </div>
+                               
                             </div>
                         </ol>
                         <div class="row">
@@ -95,10 +100,10 @@
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td>MATEMÁTICAS</td>
+                                                            <td><?php echo $licenciatura->nombre?></td>
                                                             <td>2014</td>
                                                             <td>Vigente</td>
-                                                            <td>14001@ies.edu.mx</td>
+                                                            <td><?php echo $registro->email?></td>
                                                         </tr>
                                                                                                               
                                                     </tbody>
@@ -123,3 +128,4 @@
 </body>
 
 </html>
+

@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <base href="<?php echo base_url();?>">
 
     
 
@@ -39,19 +40,20 @@
                         </ol>
                         <ol class="breadcrumb">
                             <div class="row">
-      <!-- left column -->      
+      <!-- left column -->            
                               <div class="col-md-6">
                                     <div class="text-left">
-                                      <img src="images/alumnos/09460377.jpg" class="avatar img-circle" alt="avatar" height="100px" width="100px">
+                                      <img src="<?php echo $registro->img_perfil?>" class="avatar img-circle" alt="avatar" height="100px" width="100px">
                                   
                                     </div>
                               </div>
                               <div class="col-md-6">
                                     <div class="text-right">
-                                     <h4>Samuel Montiel Ramirez</h4>
-                                     <h4>14001</h4>
-                                  
+                                        
+                                         <h4><?php echo $registro->nombre?> <?php echo $registro->apellido_m?> <?php echo $registro->apellido_p?> </h4>
+                                         <h4><?php echo $registro->no_ctrl?></h4>
                                     </div>
+                                  
                               </div>
                             </div>
                         </ol>
@@ -70,7 +72,7 @@
                                                     <div class="panel-body">
                                                         <div class="form-group">
                                                             <label>Nombre completo</label>
-                                                            <input class="form-control" placeholder="Samuel Montiel Ramirez">
+                                                            <input class="form-control" placeholder="<?php echo $registro->nombre?> <?php echo $registro->apellido_m?> <?php echo $registro->apellido_p?>">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -80,7 +82,7 @@
                                                     <div class="panel-body">
                                                         <div class="form-group">
                                                             <label>CURP</label>
-                                                            <input class="form-control" placeholder="MORS910920HCMNMM07">
+                                                            <input class="form-control" placeholder="<?php echo $registro->curp?>">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -92,7 +94,7 @@
                                                     <div class="panel-body">
                                                         <div class="form-group">
                                                             <label>Fecha de Nac</label>
-                                                            <input class="form-control" placeholder="20 septiembre 1991">
+                                                            <input class="form-control" placeholder="<?php echo $registro->fecha_nac?>">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -102,7 +104,7 @@
                                                     <div class="panel-body">
                                                         <div class="form-group">
                                                             <label>Sexo</label>
-                                                            <input class="form-control" placeholder="Masculino">
+                                                            <input class="form-control" placeholder="<?php echo $registro->sexo?>">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -112,7 +114,7 @@
                                                     <div class="panel-body">
                                                         <div class="form-group">
                                                             <label>Correo</label>
-                                                            <input class="form-control" placeholder="14001@ies.edu.mx">
+                                                            <input class="form-control" placeholder="<?php echo $registro->email?>">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -124,7 +126,7 @@
                                                     <div class="panel-body">
                                                         <div class="form-group">
                                                             <label>Calle</label>
-                                                            <input class="form-control" placeholder="Santiago Escoto">
+                                                            <input class="form-control" placeholder="<?php echo $registro->calle?>">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -134,7 +136,7 @@
                                                     <div class="panel-body">
                                                         <div class="form-group">
                                                             <label>Numero</label>
-                                                            <input class="form-control" placeholder="600">
+                                                            <input class="form-control" placeholder="<?php echo $registro->numero_ext?>">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -144,7 +146,7 @@
                                                     <div class="panel-body">
                                                         <div class="form-group">
                                                             <label>Colonia</label>
-                                                            <input class="form-control" placeholder="La Albarrada">
+                                                            <input class="form-control" placeholder="<?php echo $registro->colonia?>">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -154,7 +156,7 @@
                                                     <div class="panel-body">
                                                         <div class="form-group">
                                                             <label>Municipio</label>
-                                                            <input class="form-control" placeholder="Colima">
+                                                            <input class="form-control" placeholder="<?php echo $registro->municipio?>">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -164,7 +166,7 @@
                                                     <div class="panel-body">
                                                         <div class="form-group">
                                                             <label>Estado</label>
-                                                            <input class="form-control" placeholder="Colima">
+                                                            <input class="form-control" placeholder="<?php echo $registro->estado?>">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -174,7 +176,7 @@
                                                     <div class="panel-body">
                                                         <div class="form-group">
                                                             <label>Pais</label>
-                                                            <input class="form-control" placeholder="México">
+                                                            <input class="form-control" placeholder="<?php echo $registro->pais?>">
                                                         </div>
                                                     </div>
                                                 </div>

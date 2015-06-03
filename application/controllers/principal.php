@@ -22,18 +22,33 @@ class Principal extends CI_Controller {
 	
 	public function alumnoDateInst()
 	{
+		$alumno = $this->iesmodel->accesoTalumno($this->session->userdata('id_usuario'));
+		$data['registro']= $alumno;
+
+
+		$licenciatura = $this->iesmodel->accesoTlicenciatura($this->session->userdata('id_usuario'));
+		$data['licenciatura']= $licenciatura;
+		
+		
+					
 		$data['contenidoAlumno'] = 'alumnoDateInst.php';
 		$this->load->view('templateAlumno',$data);
 		
 	}
 	public function alumnoDatePers()
 	{
+		$alumno = $this->iesmodel->accesoTalumno($this->session->userdata('id_usuario'));
+		$data['registro']= $alumno;
+
 		$data['contenidoAlumno'] = 'alumnoDatePers.php';
 		$this->load->view('templateAlumno',$data);
 		
 	}
 	public function calificaciones()
 	{
+		$alumno = $this->iesmodel->accesoTalumno($this->session->userdata('id_usuario'));
+		$data['registro']= $alumno;
+		
 		$data['contenidoAlumno'] = 'calificaciones.php';
 		$this->load->view('templateAlumno',$data);
 		
@@ -81,7 +96,8 @@ class Principal extends CI_Controller {
 								//Login correcto
 								//$this->session->set_userdata('id',$usuario->id_usuario);
 								
-								$this->session->set_userdata('Nombre',$usuario->Nombre);
+								$this->session->set_userdata('Nombre',$usuario->usuario);
+								$this->session->set_userdata('id_usuario',$usuario->idusuario);
 								redirect('principal/alumnoDateInst');
 								
 								}
@@ -97,5 +113,7 @@ class Principal extends CI_Controller {
 		$this->session->sess_destroy();
 		 redirect('principal/index');
 	}
+
+
 	
 }

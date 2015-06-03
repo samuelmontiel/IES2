@@ -15,4 +15,19 @@ class Iesmodel extends CI_Model {
 								->get('usuarios')
 								->row();
 	}
+	public function accesoTalumno($idalumno){
+		$Query = $this->db->where('idalumno',$idalumno)
+		->from('alumno')
+		->get()
+		->row();// Produce: SELECT * FROM mitabla
+		return $Query;
+	}
+
+	public function accesoTlicenciatura($idlicenciatura){
+		$Query = $this->db->where('idlicenciatura',$idlicenciatura)
+		->from('licenciatura')
+		->get()
+		->row();// Produce: SELECT * FROM mitabla
+		return $Query;
+	}
 }

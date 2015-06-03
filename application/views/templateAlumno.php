@@ -53,7 +53,9 @@
             <ul class="nav navbar-right top-nav">
                
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Samuel <b class="caret"></b></a>
+                    
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo $registro->nombre?> <b class="caret"></b></a>
+                     
                     <ul class="dropdown-menu">
                        
                         <li class=""></li>
@@ -66,10 +68,10 @@
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
-                    <li class="active">
+                    <li >
                         <a href="<?php echo site_url('principal/alumnoDateInst');?> "><i class="fa fa-fw fa-dashboard"></i> Datos Institucionales</a>
                     </li>
-                     <li >
+                     <li class="active">
                         <a href="<?php echo site_url('principal/alumnoDatePers');?> "><i class="fa fa-fw fa-dashboard"></i> Datos Personales</a>
                     </li>
                     <li >
