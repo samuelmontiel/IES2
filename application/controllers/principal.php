@@ -28,9 +28,7 @@ class Principal extends CI_Controller {
 
 		$licenciatura = $this->iesmodel->accesoTlicenciatura($this->session->userdata('id_usuario'));
 		$data['licenciatura']= $licenciatura;
-		
-		
-					
+
 		$data['contenidoAlumno'] = 'alumnoDateInst.php';
 		$this->load->view('templateAlumno',$data);
 		
@@ -48,6 +46,11 @@ class Principal extends CI_Controller {
 	{
 		$alumno = $this->iesmodel->accesoTalumno($this->session->userdata('id_usuario'));
 		$data['registro']= $alumno;
+
+		$materias = $this->iesmodel->accesoTmaterias($this->session->userdata('id_usuario'));
+		$data['materias']= $materias;
+		
+
 		
 		$data['contenidoAlumno'] = 'calificaciones.php';
 		$this->load->view('templateAlumno',$data);

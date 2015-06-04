@@ -88,27 +88,16 @@
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-                                                        <tr>
-                                                            <td>LEHOB16</td>
-                                                            <td>SOCIOLOGÍA DE LA EDUCACIÓN</td>
-                                                            <td>100</td>
-                                                            <td>100</td>
-                                                            <td>100</td>
+                                                        <?php foreach ($materias as $materia) {?>
+                                                           
+                                                        
+                                                            <tr>
+                                                            <td><?php echo $materia->clave?></td>
+                                                            <td><?php echo $materia->nombre?></td>
+                                                            <td><?php echo $materia->calificacion?></td>
+                                                            <td><?php echo $materia->calificacion?></td>
+                                                            <td><?php echo $materia->calificacion?></td>
                                                             <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td>100</td>
-                                                            
-                                                        </tr>
-                                                         <tr>
-                                                            <td>LEPOB17</td>
-                                                            <td>CONOCIMIENTO Y DESARROLLO DE LA ADOLESCENCIA </td>
-                                                            <td>90</td>
-                                                            <td>95</td>
-                                                            <td>100</td>
-                                                            <td>100</td>
                                                             <td></td>
                                                             <td></td>
                                                             <td></td>
@@ -116,48 +105,8 @@
                                                             <td>96</td>
                                                             
                                                         </tr>
-                                                        <tr>
-                                                            <td>LELOB18</td>
-                                                            <td>INGLÉS IV</td>
-                                                            <td>90</td>
-                                                            <td>90</td>
-                                                            <td>90</td>
-                                                            <td>90</td>
-                                                            <td>90</td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td>90</td>
-                                                            
-                                                        </tr>
-                                                        <tr>
-                                                            <td>LEMOP46</td>
-                                                            <td>INTRODUCCIÓN A LA ENSEÑANZA DE LAS MATEMÁTICAS</td>
-                                                            <td>90</td>
-                                                            <td>95</td>
-                                                            <td>95</td>
-                                                            <td>100</td>
-                                                            <td>100</td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td>96</td>
-                                                            
-                                                        </tr>
-                                                        <tr>
-                                                            <td>LEMOP47</td>
-                                                            <td>ARITMÉTICA Y SISTEMAS NUMÉRICOS</td>
-                                                            <td>80</td>
-                                                            <td>90</td>
-                                                            <td>100</td>
-                                                            <td>100</td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td>93</td>
-                                                            
-                                                        </tr>
+                                                        <?php } ?>
+                                                        
                                                                                                               
                                                     </tbody>
                                                 </table>
