@@ -39,4 +39,6 @@ class Iesmodel extends CI_Model {
 		->result();
 		return $Query;
 	}
+
+	
 }

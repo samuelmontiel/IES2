@@ -49,6 +49,8 @@ class Principal extends CI_Controller {
 
 		$materias = $this->iesmodel->accesoTmaterias($this->session->userdata('id_usuario'));
 		$data['materias']= $materias;
+
+		
 		
 
 		

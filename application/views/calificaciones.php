@@ -89,23 +89,26 @@
                                                     </thead>
                                                     <tbody>
                                                         <?php foreach ($materias as $materia) {?>
-                                                           
-                                                        
+                                                                                                                  
                                                             <tr>
                                                             <td><?php echo $materia->clave?></td>
                                                             <td><?php echo $materia->nombre?></td>
-                                                            <td><?php echo $materia->calificacion?></td>
-                                                            <td><?php echo $materia->calificacion?></td>
-                                                            <td><?php echo $materia->calificacion?></td>
+
+
+                                                        
                                                             <td></td>
                                                             <td></td>
                                                             <td></td>
                                                             <td></td>
                                                             <td></td>
-                                                            <td>96</td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
                                                             
                                                         </tr>
                                                         <?php } ?>
+                                                       
                                                         
                                                                                                               
                                                     </tbody>
