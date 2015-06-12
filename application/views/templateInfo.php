@@ -369,17 +369,17 @@
           <div class="col-sm-12">
             <div class="form-group">
               <label for="name">Nombre Completo</label>
-              <input type="text" class="form-control" name="name" id="name" placeholder="Nombre Completo" required>
+              <input type="text" class="form-control" name="name" id="name_contacto" placeholder="Nombre Completo" required>
             </div>
             <div class="form-group">
               <label for="email">Correo electronico</label>
-              <input type="email" class="form-control" id="email" placeholder="Email" required>
+              <input type="email" class="form-control" id="email_contacto" placeholder="Email" required>
             </div>
             <div class="form-group">
               <label for="comments">Mensaje</label>
-              <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+              <textarea rows="10" cols="100" class="form-control" id="message_contacto" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
               <div id="success"></div>
-            <button name="submit" type="submit" class="btn btn-lg btn-primary" id="submit">Enviar</button>
+            <button name="submit" type="submit" class="btn btn-lg btn-primary" id="submit-contacto">Enviar</button>
             </div>
             
            </div>

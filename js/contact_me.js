@@ -4,7 +4,50 @@
   */
 $(function() {
 
-    $("$(#contactForm).$(input),textarea").jqBootstrapValidation({
+    var expRegEmail= /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;//Expresion regular correo
+
+    $('#submit-contacto').click(function(e) {
+
+        if( $('#name_contacto').val() == '' ){
+
+            alert('Error de validacion');
+
+            $('#name_contacto').focus();
+
+        }else if( $('#email_contacto').val() == '' || !expRegEmail.exec($('#email_contacto').val()) ){
+
+            alert('Error de validacion');
+
+            $('#email_contacto').focus();
+
+        }else if( $('#message_contacto').val() == '' ){
+
+           alert('Error de validacion'); 
+
+           $('#message_contacto').focus();
+
+        }else{
+
+             $.ajax({
+                url: "bin/contact_me.php",
+                type: "POST",
+                data: {
+                    name: $('#name_contacto').val(),
+                    email: $('#email_contacto').val(),
+                    message: $('#message_contacto').val()
+                },
+                success: function(response) {
+                    var response = jQuery.parseJSON(response);
+                    alert('TU MENSAJE HA SIDO ENVIADO');
+                }
+            });
+        }
+
+
+        return false;
+    });
+
+    /*$("(contactForm).$(input),textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {
             // something to have when submit produces an error ?
@@ -60,7 +103,7 @@ $(function() {
         filter: function() {
             return $(this).is(":visible");
         },
-    });
+    });*/
 
     $("a[data-toggle=\"tab\"]").click(function(e) {
         e.preventDefault();
