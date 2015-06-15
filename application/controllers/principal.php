@@ -23,6 +23,8 @@ class Principal extends CI_Controller {
 	
 	public function alumnoDateInst()
 	{
+
+		if ($this->session->userdata('Nombre')) {
 		$alumno = $this->iesmodel->accesoTalumno($this->session->userdata('id_usuario'));
 		$data['registro']= $alumno;
 
@@ -33,18 +35,33 @@ class Principal extends CI_Controller {
 		$data['contenidoAlumno'] = 'alumnoDateInst.php';
 		$this->load->view('templateAlumno',$data);
 		
+			
+		}else
+		{
+			redirect("principal/index");
+		}
 	}
 	public function alumnoDatePers()
 	{
+		if ($this->session->userdata('Nombre')) {
 		$alumno = $this->iesmodel->accesoTalumno($this->session->userdata('id_usuario'));
 		$data['registro']= $alumno;
 
 		$data['contenidoAlumno'] = 'alumnoDatePers.php';
 		$this->load->view('templateAlumno',$data);
 		
+			
+		}else
+		{
+			redirect("principal/index");
+		}
+		
 	}
 	public function calificaciones()
 	{
+		if ($this->session->userdata('Nombre')) {
+			
+		
 		$alumno = $this->iesmodel->accesoTalumno($this->session->userdata('id_usuario'));
 		$data['registro']= $alumno;
 		;
@@ -54,6 +71,10 @@ class Principal extends CI_Controller {
 	
 		$data['contenidoAlumno'] = 'calificaciones.php';
 		$this->load->view('templateAlumno',$data);
+		}else
+		{
+			redirect("principal/index");
+		}
 		
 	}
 ///----------------------------------------FUNCINES DE ADMINISTRADOR-------------------------------------------------------
